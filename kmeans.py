@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class KMeans :
-    def __init__(self,k=3) :
+class Kmeans :
+    def __init__(self,k) :
         self.k=k
         self.X = np.array([
     [1, 2], [1, 4], [1, 0],
@@ -50,6 +50,6 @@ class KMeans :
   
 
     
-kmeans = KMeans(k=3)
+kmeans = Kmeans(3)
 kmeans.clustering()
 kmeans.plot_clusters()
